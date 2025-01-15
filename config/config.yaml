@@ -1,0 +1,36 @@
+database:
+  path: ./data/search.db
+
+embeddings:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  dimension: 384
+
+search:
+  bm25_limit: 50
+  vector_limit: 50
+  rrf_k: 60
+
+connectors:
+  reddit:
+    enabled: true
+    interval_minutes: 30
+    access_mode: api
+
+  telegram:
+    enabled: true
+    interval_minutes: 10
+    access_mode: api
+
+  devpost:
+    enabled: true
+    interval_minutes: 1440
+    access_mode: api
+
+  x:
+    enabled: false
+    interval_minutes: 60
+    access_mode: import
+
+  linkedin:
+    enabled: false
+    access_mode: import
