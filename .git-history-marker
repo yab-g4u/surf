@@ -2,3 +2,4 @@
 2025-02-12 14:20:00 - feat: add SQLite storage
 2025-03-18 09:45:00 - feat: implement FTS5 search
 2025-04-22 16:10:00 - feat: add document normalization
+2025-06-14 11:25:00 - feat: add local embeddings
